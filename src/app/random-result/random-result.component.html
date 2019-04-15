@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+      <div class="col-4 img "  >
+        <div [ngClass]="{'imageRotateHorizontal': startDraw}" style="float:right">
+          <div *ngIf="result1 === 0">
+            <img  src="assets/image/A1_01.png">
+          </div>
+          <div *ngIf="result1 === 1">
+            <img  src="assets/image/A2_01.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 img">
+        <div [ngClass]="{'imageRotateHorizontal': startDraw}" style="float:right">
+            <div *ngIf="result2 === 0">
+              <img  src="assets/image/A1_01.png">
+            </div>
+       
+            <div *ngIf="result2 === 1">
+              <img  src="assets/image/A2_01.png">
+            </div>
+        </div>
+      </div>
+
+      <div class="col-4 img">
+        <div [ngClass]="{'imageRotateHorizontal': startDraw}" style="float:right">
+            <div *ngIf="result3 === 0">
+              <img  src="assets/image/A1_01.png">
+            </div>
+            <div *ngIf="result3 === 1">
+              <img  src="assets/image/A2_01.png">
+            </div>
+        </div>
+      </div>
+  </div>
+
+</div>

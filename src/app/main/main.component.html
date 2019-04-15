@@ -1,0 +1,33 @@
+<div class="container">
+   <div class="row">
+
+    <div class="col-9">
+      <div class="row">
+        <div class="col-5">
+          <app-left-result></app-left-result>
+        </div>
+        <div class="col-2">
+                <button (click)="myFunction()"><img src="assets/image/A1_01.png"></button>
+        </div>
+        <div class="col-5">
+            <app-right-result></app-right-result>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-12">
+            <app-random-result *ngIf="!showResult" [startDraw]="startDraw" [result1]="result1" [result2]="result2" [result3]="result3" ></app-random-result>
+            <app-show-result *ngIf="showResult" [origin]="origin" [explanation]="explanation"></app-show-result>
+        </div>
+          
+      </div>
+    </div>
+
+    <div class="col-3">
+      <app-submit></app-submit>
+    </div>
+   </div>
+          
+
+
+</div>

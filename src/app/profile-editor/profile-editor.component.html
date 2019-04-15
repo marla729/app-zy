@@ -1,0 +1,50 @@
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <div class="container">
+  <div class="row">  
+  <div><label>
+        First Name:
+        <input [ngClass]="{
+          'invalid': tryvalid}"
+        type="text" formControlName="firstName">
+      </label>
+    </div>
+      <label>
+        Last Name:
+        <input type="text" formControlName="lastName">
+      </label>
+  </div>
+      <div formGroupName="address">
+         
+      <div class = "row">  
+          <label>
+            Street:
+            <input type="text" formControlName="street">
+          </label>
+        
+          <label>
+            City:
+            <input type="text" formControlName="city">
+          </label>
+          
+      </div>
+      <div class="row">
+          <label>
+            State:
+            <input type="text" formControlName="state">
+          </label>
+        
+          <label>
+            Zip Code:
+            <input type="text" formControlName="zip">
+          </label>
+        </div>
+
+      <div class = "row justify-content-center">       
+            <button type="submit">Submit</button>
+      
+      </div>
+
+      </div>
+      </div>
+</form>
